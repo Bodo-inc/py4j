@@ -71,6 +71,8 @@ ITERATOR_TYPE = "g"
 PYTHON_PROXY_TYPE = "f"
 
 class TypeHint:
+    """Enables users to provide a hint to the Python to Java converter specifying the accurate data type for a given value.
+    Essential to enforce i.e. correct number type, like Long."""
     def __init__(self, value, java_type):
         self.value = value
         self.java_type = java_type
